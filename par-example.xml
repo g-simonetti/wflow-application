@@ -8,8 +8,6 @@
     <cfg_step>5</cfg_step>
     <meas_int>10</meas_int>
     <cfg_prefix>/home/dp208/dp208/dc-simo2/09-2025/Grid/configurations/DWF/dwf_continuum_extr/parameter_scan_new/*/cfg_ckpoint</cfg_prefix>
-    <Ns>16</Ns>
-    <Nt>32</Nt>
   </wilsonflow>
 </grid>
 
