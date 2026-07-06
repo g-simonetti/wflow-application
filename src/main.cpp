@@ -21,9 +21,7 @@ struct WilsonFlowPar : Serializable
                                   int, cfg_end,
                                   int, cfg_step,
                                   int, meas_int,
-                                  std::string, cfg_prefix,
-                                  int, Ns,
-                                  int, Nt);
+                                  std::string, cfg_prefix);
 };
 
 int main(int argc, char **argv)
@@ -55,8 +53,6 @@ int main(int argc, char **argv)
   int ckpoint_step   = wfPar.cfg_step;
   int meas_int       = wfPar.meas_int;
   std::string prefix = wfPar.cfg_prefix + ".";
-  int Ns             = wfPar.Ns;
-  int Nt             = wfPar.Nt;
 
   std::cout << GridLogMessage << "Reading Wilson flow parameters:" << std::endl;
   std::cout << GridLogMessage << "  N          = " << Nstep << std::endl;
@@ -66,8 +62,6 @@ int main(int argc, char **argv)
   std::cout << GridLogMessage << "  cfg_step    = " << ckpoint_step << std::endl;
   std::cout << GridLogMessage << "  meas_int   = " << meas_int << std::endl;
   std::cout << GridLogMessage << "  cfg_prefix = " << prefix << std::endl;
-  std::cout << GridLogMessage << "  Ns         = " << Ns << std::endl;
-  std::cout << GridLogMessage << "  Nt         = " << Nt << std::endl;
 
   // Build Grid Cartesian geometry
   auto latt_size   = GridDefaultLatt();
